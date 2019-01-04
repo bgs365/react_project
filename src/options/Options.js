@@ -24,12 +24,13 @@ class Options extends Component {
                 <TextField id="text"
                            type="text"
                            placeholder="Recherche"
+                           style={{paddingLeft: 50}}
                            onChange={this.handleChange} />
                 { this.state.courses ? (
                     <div>
-                        <Grid container spacing={24}>
+                        <Grid container style={{padding: 24}}>
                             { this.state.courses.filter( s => s.fields.title.toLowerCase().includes(this.state.searchString)).map(currentCourse => (
-                                <Grid item item xs={3}>
+                                <Grid item item xs={3} style={{padding: 24}}>
                                     <Option course={currentCourse} />
                                 </Grid>
                             ))}
@@ -52,7 +53,7 @@ const MENUOPTIONS = [
     {
 
         "fields": {
-            "title": "Marketing et Comm ",
+            "title": "Marketing et Communication",
             "image": "http://localhost:63342/21galaxy/src/logo.svg?_ijt=2s779obv4h453qfq9pfkf8uqv8"
         }
     },

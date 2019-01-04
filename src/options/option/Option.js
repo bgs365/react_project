@@ -15,7 +15,7 @@ const Option = (props) => {
                         <img src={props.course.fields.image} alt={props.course.fields.title} />
                     </Media>
                     <CardContent>
-                        <Typography gutterBottom variant="headline" component="h2">
+                        <Typography gutterBottom variant="subtitle1" component="h3" >
                             {props.course.fields.title}
                         </Typography>
                     </CardContent>
